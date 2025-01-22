@@ -15,7 +15,7 @@ const generateEcgData = () => {
 };
 
 // Endpoint para obtener los datos simulados
-app.get('/simulate', (req, res) => {
+app.get('/data', (req, res) => {
     const data = generateEcgData();
     res.json(data);
 });
